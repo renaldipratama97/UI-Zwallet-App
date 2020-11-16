@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Arkademy - Zwallet</title>
+ <style>
+ /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item 
+yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka 
+menu yaitu (li.icon) 
+*/
+@media screen and (max-width:1400px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    /* float: right; */
+    display: inline-block;
+  }
+}
+ 
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. 
+   Munculnya Class ini akan mendisplay isi list menu
+*/
+@media screen and (max-width:1400px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+ </style>
+
+ </head>
+ <body>
+ <ul class="topnav">
+  <li><a href="login/index.html" target="_blank">Login</a></li>
+  <li><a href="sign-up/index.html" target="_blank">Sign Up</a></li>
+  <li><a href="create-pin/index.html" target="_blank">Create Pin</a></li>
+  <li><a href="reset-password/index.html" target="_blank">Reset Password</a></li>
+  <li><a href="home/index.html" target="_blank">Home</a></li>
+  <li><a href="history/index.html" target="_blank">History</a></li>
+  <li><a href="transfer/index.html" target="_blank">Transfer</a></li>
+  <li><a href="confirmation/index.html" target="_blank">Confirmation</a></li>
+  <li><a href="pin-confirmation/index.html" target="_blank">Pin - Confirmation</a></li>
+  <li><a href="status/index.html" target="_blank">Status</a></li>
+  <li><a href="top-up/index.html" target="_blank">Top Up</a></li>
+  <li><a href="home-pressed/index.html" target="_blank">Home Pressed</a></li>
+  <li><a href="profile/index.html" target="_blank">Profile</a></li>
+  <li><a href="personal-information/index.html" target="_blank">Personal Information</a></li>
+  <li><a href="change-password/index.html" target="_blank">Change Password</a></li>
+  <li><a href="change-pin/index.html" target="_blank">Change Pin</a></li>
+  <li><a href="add-phone-number/index.html" target="_blank">Add Phone Number</a></li>
+  <li><a href="manage-phone-number/index.html" target="_blank">Manage Phone Number</a></li>
+  <li><a href="landing-page/index.html" target="_blank">Landing Page</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+ <script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+
+ </script>
+</Body>
+</html>
