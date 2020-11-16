@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Pin - Confirmation</title>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <div class="title">Zwallet</div>
+            <div class="profil">
+                <img src="../assets/img/profil-foto.png">
+                <div class="name">
+                    <span>Robert Chandler</span>
+                    <p>+62 8139 3877 7946</p>
+                </div>
+                <div class="notification">
+                    <img src="../assets/img/bell.png">
+                </div>
+            </div> 
+        </div>
+    </header>
+    <div class="content">
+        <div class="box">
+            <nav>
+                <div>
+                    <img src="../assets/img/grid.png">
+                    <p>Dashboard</p>
+                </div>
+                <div>
+                    <img src="../assets/img/icon-active/arrow-up.svg">
+                    <p>Transfer</p>
+                </div>
+                <div>
+                    <img src="../assets/img/plus.png">
+                    <p>Top Up</p>
+                </div>
+                <div>
+                    <img src="../assets/img/user.png">
+                    <p>Profile</p>
+                </div>
+                <div>
+                    <img src="../assets/img/log-out.png">
+                    <p>Logout</p>
+                </div>
+            </nav>
+            <section>
+                <div class="box">
+                    <div class="transfer-to">Transfer To</div>
+
+                    <div class="box-to-box">
+                        <img src="../assets/img/man.png">
+                        <div class="box-profile">
+                            <span>Samuel Sihi</span>
+                            <p>+62 813-8492-9994</p>
+                        </div>
+                    </div>
+
+                    <div class="details-title">Details</div>
+
+                    <div class="box-details">
+                        <span>Amount</span>
+                        <p>Rp100.000</p>
+                    </div>
+
+                    <div class="box-details">
+                        <span>Balance Left</span>
+                        <p>Rp20.000</p>
+                    </div>
+
+                    <div class="box-details">
+                        <span>Date & Time</span>
+                        <p>May 11, 2020 - 12.20</p>
+                    </div>
+
+                    <div class="box-details">
+                        <span>Notes</span>
+                        <p>For buying some socks</p>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSaya">Continue</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSaya" tabindex="-1" role="dialog" aria-labelledby="modalSayaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalSayaLabel">Enter PIN to Transfer</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Enter your 6 digits PIN for confirmation <br> to continue transferring money.
+                <div class="pin-box-modal">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+        <div class="box">
+            <div class="author">2020 Zwallet. All right reserved</div>
+            <div class="contact-hp">+62 5637 8882 9901</div>
+            <div class="contact-mail">contact@zwallet.com</div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
